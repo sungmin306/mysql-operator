@@ -1,0 +1,12 @@
+apiVersion: db.cloudstudy.com/v1alpha1
+kind: MySQL
+metadata:
+  name: sample-mysql
+  namespace: default
+spec:
+  version: "8.0"
+  replicas: 1
+  storage:
+    size: "5Gi"
+    storageClassName: local-path
+
